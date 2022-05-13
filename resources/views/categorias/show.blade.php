@@ -42,7 +42,6 @@
                         <div class="col-md-9 d-flex align-items-center">
                             <a href="{{ route('tareas-show', ['id' => $tarea->id]) }}">{{$tarea->nombre}}</a>
                         </div>
-
                         <div class="col-md-3 d-flex justify-content-end">
                             <form action="{{ route('tareas-destroy', [$tarea->id]) }}" method="POST">
                                 @method('DELETE')
